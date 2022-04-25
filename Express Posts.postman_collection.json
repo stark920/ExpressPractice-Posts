@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "dbbbeb52-eecc-4377-9cf5-91461d720547",
+		"name": "Express Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET POSTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://agile-tundra-50846.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-tundra-50846",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tester111\",\n    \"content\": 1234246346,\n    \"type\": \"public\",\n    \"tags\": \"sfd\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-tundra-50846.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-tundra-50846",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE POSTS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-tundra-50846.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-tundra-50846",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE 1 POST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://agile-tundra-50846.herokuapp.com/posts/6266854809aa9714db782965",
+					"protocol": "https",
+					"host": [
+						"agile-tundra-50846",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6266854809aa9714db782965"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE 1 POST",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": null,\n    \"content\": null,\n    \"type\": null,\n    \"tags\": null\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-tundra-50846.herokuapp.com/posts/626685ee09aa9714db78296f",
+					"protocol": "https",
+					"host": [
+						"agile-tundra-50846",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626685ee09aa9714db78296f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

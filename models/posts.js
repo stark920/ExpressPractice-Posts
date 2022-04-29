@@ -4,27 +4,15 @@ const postSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, '{PATH}: 請輸入姓名'],
-      trim: true,
+      required: true,
     },
     tags: {
       type: [String],
-      validate: {
-        validator: function (v) {
-          return v.toString() && v.length > 0;
-        },
-        message: '{PATH}: 請至少選擇一個標籤',
-      },
-      trim: true,
+      required: true,
     },
     type: {
       type: String,
-      enum: {
-        values: ['private', 'public'],
-        message: '{PATH}: 請選擇私人(private)或公開(public)',
-      },
-      required: [true, '{PATH}: 請選擇私人(private)或公開(public)'],
-      trim: true,
+      required: true,
     },
     image: {
       type: String,
@@ -37,7 +25,7 @@ const postSchema = new mongoose.Schema(
     },
     content: {
       type: String,
-      required: [true, '{PATH}: 請輸入內容'],
+      required: true,
     },
     likes: {
       type: Number,
